@@ -168,3 +168,167 @@ print(y)
 (me, You) = thislist
 print(me)
 print(You) 
+
+thisset = {"jon", "lee", "lee"}
+print(thisset)
+
+thisset = {"jon", "lee", 1, True}
+thisset.add("Kill")
+print(thisset)
+print(len(thisset))
+
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
+##set3 = set1 | set2
+set3 = set1.union(set2)
+print(set3)
+
+thisdict = {
+    "Name": "Toyota",
+    "Brand": "Hilux",
+    "Year": 2024
+}
+
+thisdict ["Color"] = "White"
+mydict = thisdict.copy()
+
+print(thisdict["Year"])
+print(thisdict)
+print(mydict)
+
+a = 200
+b = 33
+
+if b > a:
+    print("b is greater than a")
+elif a == b:
+    print("a and b are equal")
+else:
+    print("a is greater than b")
+
+a = 50
+b = 30
+c = 10
+
+if a > b and b > c:
+    print("Both conditions are true")
+  
+fruits = ["Apple", "Grapes", "Guava"]
+for x in fruits:
+    if x == "Grapes":
+        continue
+    print(x)
+
+for x in range(2, 6, 2):
+    print(x)
+
+for x in range(6):
+    if x == 3: break
+    print(x)
+else:
+    print("Finally finished")
+
+def myFunction(fName):
+    print(fName + " Oppah")
+myFunction("Enoch")
+myFunction("Daniel")
+
+def my_function(*kids):
+    print("The youngest child is " + kids[2])
+my_function("Joe", "Linus", "Oppah")
+
+def myFunction(x):
+    return 5 * x
+print (myFunction(4))
+
+x = lambda a, b : a + b + 10
+print(x(3, 4))
+
+def myfunction(n):
+    return lambda a: a * n
+mydoubler = myfunction(2)
+print(mydoubler(11))
+
+x = 5
+
+def myfunction():
+    x = 200
+    print(x)
+myfunction()
+print(x)
+
+import datetime
+x = datetime.datetime.now()
+print(x)
+print(x.year)
+print(x.strftime("%A"))
+print(x.strftime("%b"))
+print(x.strftime("%a"))
+print(x.strftime("%B"))
+
+y = datetime.datetime(2024, 3, 25)
+print(y)
+
+x = min(2, 5 , 4)
+y = max(2, 5 , 4)
+d = abs(-2.35)
+a = pow(2, 3)
+print(x)
+print(y)
+print(d)
+print(a)
+
+import math
+x = math.ceil(25.9)
+y = math.floor(25.9)
+z = math.sqrt(64)
+print(x)
+print(y)
+print(z)
+
+import json
+## Converting JSON to Python
+x = '{"name" : "Enoch", "age" : 30, "City" : "Cape Coast"}'
+y = json.loads(x)
+print(y["name"])
+
+## Converting Python to JSON
+x = {"name" : "Enoch", "age" : 30, "City" : "Cape Coast"}
+y = json.dumps(x)
+print(y)
+
+import re
+txt = "I am Handsome"
+x = re.findall("am", txt)
+print(x)
+
+txt = "It a beautiful day"
+x = re.search("^It.*day$", txt)
+print(x)
+
+try:
+    print("Hello")
+except:
+    print("Something went wrong")
+else:
+    print("Nothing went wrong")
+
+try:
+    x = 50
+    y = 10
+    if x > y:
+        print("Yes")
+except:
+    print("Something is wrong with your head")
+
+username = input()
+if username == str():
+    print("Yello")
+else:
+    print("Geez")
+
+price = 50000
+txt = f"I have to pay a price of {price:,}"
+print(txt)
+
+
