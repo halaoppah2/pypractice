@@ -321,14 +321,19 @@ try:
 except:
     print("Something is wrong with your head")
 
-username = input()
-if username == str():
-    print("Yello")
-else:
-    print("Geez")
-
 price = 50000
 txt = f"I have to pay a price of {price:,}"
 print(txt)
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+##print(matplotlib.__version__)
+
+xpoint = np.array([1, 8])
+ypoint = np.array([3, 10])
+
+plt.plot(xpoint, ypoint)
+plt.show()
 
 
